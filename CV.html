@@ -4,15 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CV</title>
+    <script>
+        function ajouterChamp(sectionId, placeholder) {
+            let section = document.getElementById(sectionId);
+            
+            let div = document.createElement("div"); // Conteneur pour l'input + bouton
+            let input = document.createElement("input");
+            input.type = "text";
+            input.placeholder = placeholder;
+
+            let boutonSupprimer = document.createElement("button");
+            boutonSupprimer.textContent = "❌";
+            boutonSupprimer.type = "button";
+            boutonSupprimer.onclick = function() {
+                section.removeChild(div);
+            };
+
+            div.appendChild(input);
+            div.appendChild(boutonSupprimer);
+            section.appendChild(div);
+        }
+    </script>
 </head>
 <body>
 
     <header>
-        <h1>CV</h1>
+        <h1>Remplir mon CV</h1>
         <nav>
             <ul>
                 <li><a href="Accueil.html">Accueil</a></li>
-                <li><a href="CV.html">A Propos</a></li>
+                <li><a href="CV.html">Candidater</a></li>
                 <li><a href="Portfolio.html">Portfolio</a></li>
                 <li><a href="Contact.html">Contact</a></li>
             </ul>
@@ -20,12 +41,40 @@
     </header>
 
     <main>
-        <h2>Votre CV</h2>
-        <p>Remplissez votre CV</p>
+        <h2>Mon CV</h2>
+
+        <form>
+
+            <label>Nom : <input type="text" name="nom"></label><br>
+            <label>Email : <input type="email" name="email"></label><br>
+            <label>Téléphone : <input type="tel" name="telephone"></label><br>
+
+            <h3>Profil</h3>
+            <textarea name="profil" placeholder="Décrivez-vous en quelques lignes..." rows="4" cols="50"></textarea><br>
+
+            <h3>Expérience</h3>
+            <div id="experiences"></div>
+            <button type="button" onclick="ajouterChamp('experiences', 'Poste - Entreprise - Dates')">➕</button><br>
+
+            <h3>Formation</h3>
+            <div id="formations"></div>
+            <button type="button" onclick="ajouterChamp('formations', 'Diplôme - École - Année')">➕</button><br>
+
+            <h3>Compétences</h3>
+            <div id="competences"></div>
+            <button type="button" onclick="ajouterChamp('competences', 'Compétence')">➕</button><br>
+
+            <h3>Langues</h3>
+            <div id="langues"></div>
+            <button type="button" onclick="ajouterChamp('langues', 'Langue - Niveau')">➕</button><br>
+
+            <button type="submit">Enregistrer</button>
+        </form>
+
     </main>
 
     <footer>
-        <p>&copy; 2025 - Test</p>
+        <p>&copy; 2025 - Mon Site Web</p>
     </footer>
 
 </body>
