@@ -1,0 +1,131 @@
+
+@import url(https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap);
+
+
+* {
+    font-family:  "Poppins", serif;
+}
+
+body {
+margin: 0 auto;
+
+}
+
+/*  tete de page */
+
+header.header {
+    display: flex;
+    align-items: center;
+    
+}
+
+header.header img {
+    width: 150px ;
+  
+}
+
+/* Background Image */
+
+     /* body {
+
+    background-image: url('../Psd/Export/Sans\ titre-1.jpg') ;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position-y: 600px;
+} */
+
+/* Image Intro */
+
+.Intro {
+    width: 100%;
+    background-image: url(../Psd/Export/Sans\ titre-1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+body {
+
+
+}
+
+
+
+
+
+
+
+/* menu de navigation */
+
+nav.nav {
+    color: white;
+    text-decoration: none ; 
+
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    width: 700px;
+    margin-left: 50px;
+    font-size: 25px;
+
+}
+
+nav.nav li a {
+    color: black;
+    text-decoration: none ;
+}
+
+header {
+    color: black;
+    text-decoration: none ;
+}
+
+/* Titre (BytsGuards)*/
+
+header.big-title { 
+    
+   text-align: center ;
+    font-size: 80px;
+
+   }
+
+   /* Phrase d'accroche */
+
+   header.accroche {
+
+    text-align: center;
+ 
+   }
+
+
+   h1.Notre-Equipe {
+
+    text-align: center;
+   }
+
+   /* Team photos*/
+
+
+   .container {
+    display: flex;
+    align-items: center;
+   
+}
+
+.profile-img {
+ 
+    object-fit: cover;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
