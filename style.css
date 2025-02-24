@@ -1,0 +1,168 @@
+/* Style global épuré */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    background: url(images.png);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+  }
+  
+  header {
+    padding: 20px;
+    background: rgb(0, 0, 0);
+    color: white;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 10px;
+  }
+  
+  nav ul li {
+    margin: 0 10px;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+  }
+  
+  h1 {
+    color: #00ff99;
+    text-align: center;
+  }
+  
+  h2 {
+    color: #00ff99;
+    text-align: center;
+  }
+
+  h3 {
+    color: #00ff99;
+    text-align: center;
+  }
+
+  h4  {
+    color: #00ff99;
+    text-align: center;
+    text-size-adjust: 10px;
+  }
+
+  p {
+    color: #00ff99;
+    text-align: center;
+  }
+
+  main {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .presentation {
+    padding: 50px 20px;
+    background: rgba(0, 0, 0, 0.6);
+    margin-bottom: 40px;
+  }
+  
+  .presentation h2 {
+    font-size: 2.5rem;
+    color: #00ff99;
+  }
+  
+  /* Contact form */
+  #contact {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 40px;
+    border-radius: 8px;
+    width: 90%;
+    max-width: 600px;
+    margin: 0 auto 40px;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  label {
+    text-align: left;
+    font-weight: bold;
+    margin: 10px 0 5px;
+  }
+  
+  input, textarea {
+    padding: 10px;
+    font-size: 1rem;
+    border: 2px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 15px;
+  }
+  
+  textarea {
+    resize: vertical;
+  }
+  
+  button {
+    background-color: #00ff99;
+    color: black;
+    padding: 10px 15px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  button i {
+    margin-right: 5px;
+  }
+  
+  button:hover {
+    background-color: #009966;
+  }
+
+  h1 {
+    color: #00ff99;
+    text-align: center;
+  }
+  
+  p {
+    margin-top: 20px;
+    font-size: 1.1rem;
+  }
+  
+  /* Amélioration de l'image de fond pour les pages CV et Portfolio */
+  .cv-page, .portfolio-page {
+    background: url(images.png);
+    background-size: contain;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+  }
+  
+  /* Centrage des CV et Portfolio */
+  .cv-container, .portfolio-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px;
+    background: rgba(175, 41, 41, 0.7);
+    border-radius: 10px;
+  }
+  
