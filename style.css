@@ -165,4 +165,199 @@
     background: rgba(175, 41, 41, 0.7);
     border-radius: 10px;
   }
-  
+
+/* Style global épuré */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background: url(images.png) no-repeat center center fixed;
+  background-size: cover;
+}
+
+header {
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+/* Styles du menu burger */
+.menu-toggle {
+  display: none;
+  font-size: 2rem;
+  cursor: pointer;
+  color: white;
+  background: none;
+  border: none;
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  z-index: 1001;
+}
+
+/* Styles de base du menu */
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.8);
+  padding: 10px;
+}
+
+/* Cacher le menu sur mobile */
+@media (max-width: 768px) {
+  .menu-toggle {
+      display: block; /* Affiche l'icône burger */
+  }
+
+  .nav-links {
+  display: flex;
+  flex-direction: column;
+  background: rgba(0, 0, 0, 0.9);
+  position: absolute;
+  top: 50px;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  padding: 0;
+  overflow: hidden;
+  max-height: 0;
+  opacity: 0;
+  transition: max-height 0.5s ease-in-out, opacity 0.5s ease-in-out;
+}
+
+.nav-links.active {
+  max-height: 500px;
+  opacity: 1;
+  padding: 20px 0;
+}
+
+.nav-links.active {
+  display: flex; /* Affiche le menu quand on clique */
+  max-height: 500px;
+  padding: 20px 0;
+}
+
+  .nav-links.active {
+      display: flex; /* Affiche le menu quand on clique */
+  }
+}
+
+nav ul li {
+  margin: 0 10px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+h1 {
+  color: #00ff99;
+  text-align: center;
+}
+
+main {
+  margin-top: 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.presentation {
+  padding: 50px 20px;
+  background: rgba(0, 0, 0, 0.6);
+  margin-bottom: 40px;
+}
+
+.presentation h2 {
+  font-size: 2.5rem;
+  color: #00ff99;
+}
+
+/* Contact form */
+#contact {
+  background: rgba(0, 0, 0, 0.8);
+  padding: 40px;
+  border-radius: 8px;
+  width: 90%;
+  max-width: 600px;
+  margin: 0 auto 40px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  text-align: left;
+  color: white;
+  font-weight: bold;
+  margin: 10px 0 5px;
+}
+
+input, textarea {
+  padding: 10px;
+  font-size: 1rem;
+  border: 2px solid #ddd;
+  border-radius: 4px;
+  margin-bottom: 15px;
+}
+
+textarea {
+  resize: vertical;
+}
+
+button {
+  background-color: #00ff99;
+  color: black;
+  padding: 10px 15px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button i {
+  margin-right: 5px;
+}
+
+button:hover {
+  background-color: #009966;
+}
+
+p {
+  margin-top: 20px;
+  font-size: 1.1rem;
+}
+
+/* Amélioration de l'image de fond pour les pages CV et Portfolio */
+.cv-page, .portfolio-page {
+  background: url(images.png) no-repeat center center fixed;
+  background-size: cover;
+}
+
+/* Centrage des CV et Portfolio */
+.cv-container, .portfolio-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px;
+  background: rgba(0, 0, 0, 0.7);
+  border-radius: 10px;
+  backdrop-filter: blur(10px); /* Effet de flou pour éviter de masquer l'image de fond */
+}

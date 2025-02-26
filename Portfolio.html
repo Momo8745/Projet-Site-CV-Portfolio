@@ -8,18 +8,20 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 
-<nav>
-    <ul>
-        <li><a href="accueil.html"><i class="fa fa-home"></i> Accueil</a></li>
-        <li><a href="cv.html"><i class="fa fa-user"></i> CV</a></li>
-        <li><a href="portfolio.html"><i class="fa fa-briefcase"></i> Portfolio</a></li>
-        <li><a href="contact.html"><i class="fa fa-envelope"></i> Contactez-nous</a></li>
-    </ul>
-</nav>
-
 <body>
 
     <header>
+        <nav>
+            <div class="menu-toggle" onclick="toggleMenu()">
+                ☰ <!-- Icône du menu burger -->
+            </div>
+            <ul class="nav-links">
+                <li><a href="Accueil.html">Accueil</a></li>
+                <li><a href="cv.html">CV</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
         <h1>Bonjour et bienvenue sur ce projet</h1>
     </header>
 
@@ -29,25 +31,25 @@
 
         <p><h2>Product Organizer</h2></p>
         <p><h5>BALACHANDRAN Suvin</h5></p>
-        <img src="CV Suvin.jpg" width="500" height="650" alt="Portfolio de Balachandran Suvin">
+        <img src="CV Suvin.jpg" width="400" height="650" alt="Portfolio de Balachandran Suvin">
         <a href="CV Suvin.pdf" download="CV de Suvin Balachandran.pdf">
             <button>Télécharger</button>
         </a>
         <p><h2>Scrum Master</h2></p>
         <p><h5>AOUANI Mohamed</h5></p>
-	    <img src="CV MOHAMED A.jpg" width="500" height="650" alt="Portfolio de Aouani Mohamed">
+	    <img src="CV MOHAMED A.jpg" width="400" height="650" alt="Portfolio de Aouani Mohamed">
         <a href="CV MOHAMED A.pdf" download="CV de Mohamed Aouani.pdf">
             <button>Télécharger</button>
         </a>
         <p><h2>Développeurs</h2></p>
         <p><h5>SAKHEL Mohamed</h5></p>
-	    <img src="CV.jpg" width="500" height="650" alt="Portfolio de  Sakhel Mohamed">
+	    <img src="CV.jpg" width="400" height="650" alt="Portfolio de  Sakhel Mohamed">
         <a href="CV.pdf" download="CV de Mohamed Sakhel.pdf">
             <button>Télécharger</button>
         </a>
         <p><h2>Développeurs</h2></p>
         <p><h5></h5>CIOCAN Mathias </h5></p>
-        <img src="CV Mathias.jpg" width="500" height="650" alt="Portfolio de  Ciocan Mathias">
+        <img src="CV Mathias.jpg" width="400" height="650" alt="Portfolio de  Ciocan Mathias">
         
         <a href="https://agenceemotion.fr/portfolio" target="_blank">
                 <button>Voir mon Portfolio</button>
@@ -56,7 +58,7 @@
         </a>
        
         <p><h5>TALBI Adam</h5></p>
-        <img src="CV Adam.jpg" width="500" height="650" alt="Portfolio de  Talbi Adam">
+        <img src="CV Adam.jpg" width="400" height="650" alt="Portfolio de  Talbi Adam">
         <a href="CV Adam.pdf" download="CV de Adam Talbi.pdf">
             <button>Télécharger</button>
         </a>
@@ -70,5 +72,12 @@
         <a href="Contact.html">Nous Contacter</a>
         <p>&copy; 2025 - Test</p>
     </footer>
+
+    <script>
+        function toggleMenu() {
+            document.querySelector(".nav-links").classList.toggle("active");
+        }
+        </script>
+        
 </body>
 </html>
