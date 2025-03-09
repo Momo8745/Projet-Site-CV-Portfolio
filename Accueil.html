@@ -1,49 +1,145 @@
 <!DOCTYPE html>
 <html lang="fr">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Test</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <title>Accueil-ByteGuards</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
 
-    <header>
-        <nav>
-            <div class="menu-toggle" onclick="toggleMenu()">
-                ☰ <!-- Icône du menu burger -->
-            </div>
-            <ul class="nav-links">
+    <section class="top-page">
+        <header class="header">
+            <img src="logo.png" alt="Logo du site">
+            <nav class="nav">
                 <li><a href="Accueil.html">Accueil</a></li>
-                <li><a href="cv.html">CV</a></li>
-                <li><a href="portfolio.html">Portfolio</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-        <h1>Bonjour et bienvenue sur ce projet</h1>
-    </header>
+                <li><a href="CV.html">CV/Portfolio</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+            </nav>
+        </header>
+
+        <header class="big-title">
+            <div class="logo-background"></div> <!-- Ajout du logo en arrière-plan -->
+            <h1 class="big-title">ByteGuards</h1>
+        </header>
+        
+        <section class="presentation">
+            <h2>Parce que la sécurité numérique n’est pas <br> 
+                une option mais une nécessité.</h2>            
+        </section>
+
+        <section class="background">
+            <img src="logo.png" alt="Logo Background">
 
 
+        </section>
+        
+    </section>
 
-    <main>
-        <h2>À propos</h2>
-        <p>Description du site</p>
-    </main>
 
-    <footer>
-        <a href="Contact.html">Nous Contacter</a>
-        <p>&copy; 2025 - Test</p>
+    <div class="container">
+
+        <button class="button-apropos">A propos de Nous</button>
+    </div>
+
+    <section class="intro-text">
+
+    <h3>Nous somme une equipe passioné par la cyber-sécurité et le <br> 
+        développement web. A travers ce site, découvrez nos compétences,
+         nos <br> projets et notre ambition de contribuer à un monde numérique plus sur. </h3>
+
+    </section>
+
+    
+
+    <h1 class="notre-equipe">Notre Equipe</h1>
+
+    <!-- <div class="carousel-container">
+        <button class="prev" onclick="scrollLeft()">&#10094;</button>
+
+        <div class="carousel">
+            <div class="circle"><img src="Mathias PP.png" alt="Membre 1"></div>
+            <div class="circle"><img src="PP 2 .png" alt="Membre 2"></div>
+            <div class="circle"><img src="PP 3 .png" alt="Membre 3"></div>
+            <div class="circle"><img src="PP 4 .png" alt="Membre 4"></div>
+            <div class="circle"><img src="profil5.jpg" alt="Membre 5"></div>
+        </div>
+
+        <button class="next" onclick="scrollRight()">&#10095;</button>
+    </div>
+
+    <script src="script.js"></script> -->
+
+   <!-- ...existing code... -->
+ <!-- <div class="team-selection">
+    <button class="circle small"></button>
+    <button class="circle medium"></button>
+    <button class="circle large"></button>
+    <button class="circle medium"></button>
+    <button class="circle small"></button>
+ </div>
+ ...existing code... -->
+
+
+ <div class="container">
+    <div class="arrow-circle">←</div>
+    <div class="circle small-circle-left"></div>
+    <div class="circle medium-circle-left"></div>
+    <div class="circle large-circle"></div>
+    <div class="circle medium-circle-right"></div>
+    <div class="circle small-circle-right"></div>
+    <div class="arrow-circle">→</div>
+ </div>
+      
+
+</body>
+
+
+<footer style="width: 100%; background-color: #f5f7fa; text-align: center; padding: 40px 20px;">
+        <!-- Titre -->
+        <h2 style="font-size: 2rem; font-weight: bold; margin-bottom: 20px; color: #1a202c;">ByteGuards</h2>
+
+        <!-- Icônes sociales -->
+        <div style="display: flex; justify-content: center; gap: 15px; margin-bottom: 30px;">
+            <a href="https://www.facebook.com" target="_blank">
+                <img src="https://img.icons8.com/ios-filled/50/000000/facebook.png" alt="Facebook">
+            </a>
+            <a href="https://www.linkedin.com" target="_blank">
+                <img src="https://img.icons8.com/ios-filled/50/000000/linkedin.png" alt="LinkedIn">
+            </a>
+            <a href="https://www.youtube.com" target="_blank">
+                <img src="https://img.icons8.com/ios-filled/50/000000/youtube.png" alt="YouTube">
+            </a>
+            <a href="https://www.instagram.com" target="_blank">
+                <img src="https://img.icons8.com/ios-filled/50/000000/instagram.png" alt="Instagram">
+            </a>
+        </div>
+
+        <!-- Sections (Security, Web, Cloud) -->
+        <div style="display: flex; justify-content: center; gap: 80px; flex-wrap: wrap; max-width: 800px; margin: auto; margin-bottom: 20px;">
+            <div style="text-align: center;">
+                <h3 style="font-size: 1.2rem; font-weight: bold; color: #1a202c;">Security</h3>
+                <p style="color: #4a5568; margin: 2px 0;">CyberSecurity</p>
+                <p style="color: #4a5568; margin: 2px 0;">Pare-feu</p>
+            </div>
+            <div style="text-align: center;">
+                <h3 style="font-size: 1.2rem; font-weight: bold; color: #1a202c;">Web</h3>
+                <p style="color: #4a5568; margin: 2px 0;">Cloud</p>
+                <p style="color: #4a5568; margin: 2px 0;">Software</p>
+            </div>
+            <div style="text-align: center;">
+                <h3 style="font-size: 1.2rem; font-weight: bold; color: #1a202c;">Cloud</h3>
+                <p style="color: #4a5568; margin: 2px 0;">Data</p>
+                <p style="color: #4a5568; margin: 2px 0;">Big Data</p>
+            </div>
+        </div>
+
+        <!-- Copyright -->
+        <p style="font-size: 14px; color: #718096;">&copy; 2025 ByteGuards - Tous droits réservés</p>
     </footer>
 
-    <script>
-        function toggleMenu() {
-            document.querySelector(".nav-links").classList.toggle("active");
-        }
-        </script>
-        
+
 </body>
+
 
 </html>

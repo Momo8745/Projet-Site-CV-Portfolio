@@ -3,70 +3,188 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CV</title>
+    <title>CV/Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
-
 <body>
-    <header>
-        <nav>
-            <div class="menu-toggle" onclick="toggleMenu()">
-                ☰ <!-- Icône du menu burger -->
-            </div>
-            <ul class="nav-links">
-                <li><a href="Accueil.html">Accueil</a></li>
-                <li><a href="cv.html">CV</a></li>
-                <li><a href="portfolio.html">Portfolio</a></li>
-                <li><a href="contact.html">Contact</a></li>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+<body class="bg-gray-50 text-gray-900">
+    <header id="top" class="bg-white shadow p-6 flex justify-between items-center border-b relative" class="bg-white shadow p-6 flex justify-between items-center border-b relative">
+        <div class="flex items-center space-x-3">
+            <img src="ByteGuards.jpg" alt="ByteGuards Logo" class="h-10">  
+            <span class="font-bold text-xl">ByteGuards</span>
+        </div>
+        <nav class="hidden lg:flex w-full justify-center">
+            <ul class="flex space-x-8 text-lg">
+                <li><a href="accueil.html" class="hover:text-gray-600 font-bold">Accueil</a></li>
+                <li><a href="cv.html" class="hover:text-gray-600 font-bold">CV/Portfolio</a></li>
+                <li><a href="contact.html" class="hover:text-gray-600 font-bold">Nous Contacter</a></li>
             </ul>
         </nav>
-        <h1>CV des membres</h1>
-        </header>
-
-    <main>
-        <h2>Product Organizer</h2>
-        <p>BALACHANDRAN Suvin</p>
-        <img src="CV Suvin.jpg" width="400" height="650" alt="CV de Balachandran Suvin">
-        <a href="CV Suvin.pdf" download="CV de Suvin Balachandran.pdf">
-            <button>Télécharger</button>
-        </a>
-        <h3>Scrum Master</h3>
-        <p>AOUANI Mohamed</p>
-	    <img src="CV MOHAMED A.jpg" width="400" height="650" alt="CV de Aouani Mohamed">
-        <a href="CV MOHAMED A.pdf" download="CV de Mohamed Aouani.pdf">
-            <button>Télécharger</button>
-        </a>
-        <h4>Développeurs</h4>
-        <p>SAKHEL Mohamed</p>
-	    <img src="CV.jpg" width="400" height="650" alt="CV de Sakhel Mohamed">
-        <a href="CV.pdf" download="CV de Mohamed Sakhel.pdf">
-            <button>Télécharger</button>
-        </a>
-        <p>CIOCAN Mathias</p>
-        <img src="CV Mathias.jpg" width="400" height="650" alt="CV de Ciocan Mathias">
-        <a href="CV Mathias.pdf" download="CV de Mathias Ciocan.pdf">
-            <button>Télécharger</button>
-        </a>
-        <p>TALBI Adam</p>
-        <img src="CV Adam.jpg" width="400" height="650" alt="CV de Talbi Adam">
-        <a href="CV Adam.pdf" download="CV de Adam Talbi.pdf">
-            <button>Télécharger</button>
-        </a>
-    </main>
-
-    <footer>
-	<a href="Contact.html">Nous Contacter</a>
-	      
-	
-        <p>&copy; 2025 - Tous droits réservés</p>
-    </footer>
-
-    <script>
-        function toggleMenu() {
-            document.querySelector(".nav-links").classList.toggle("active");
-        }
-        </script>
+        <button id="menu-button" class="lg:hidden text-gray-900">
+            ☰
+        </button>
         
+    </header>
+    <nav id="mobile-menu" class="hidden lg:hidden bg-white shadow-md p-4 absolute top-16 right-4 z-50 w-56">
+        <ul class="flex flex-col space-y-0">
+            <li><a href="accueil.html" class="hover:text-gray-600 font-bold">Accueil</a></li>
+            <li><a href="cv.html" class="hover:text-gray-600 font-bold">CV/Portfolio</a></li>
+            <li><a href="contact.html" class="hover:text-gray-600 font-bold">Nous Contacter</a></li>
+        </ul>
+    </nav>        
+
+    <section class="hero">
+        <h1>CV/Portfolio</h1>
+        <p>Découvrez nos profils, nos expériences et nos compétences à travers nos CV.</p>
+        <button class="btn-primary"><a href="portfolio.html" class="btn-discover">Découvrir</a></button>
+    </section>
+
+
+    <section class="team">
+        <div class="member">
+            <a href="Suvin.html">
+                <div class="circle">
+                    <img src="Suvin.png" alt="Suvin Balachandran">
+                </div>
+            </a>
+            <p>Suvin Balachandran</p>
+        </div>
+    
+        <div class="member">
+            <a href="Mathias.html">
+                <div class="circle">
+                    <img src="Mathias.png" alt="Mathias Ciocan">
+                </div>
+            </a>
+            <p>Mathias Ciocan</p>
+        </div>
+    
+        <div class="member">
+            <a href="Mohamed S.html">
+                <div class="circle">
+                    <img src="Mohamed S.png" alt="Mohamed Sakhel">
+                </div>
+            </a>
+            <p>Mohamed Sakhel</p>
+        </div>
+    
+        <div class="member">
+            <a href="Mohamed A.html">
+                <div class="circle">
+                    <img src="Mohamed A.png" alt="Mohamed Aouani">
+                </div>
+            </a>
+            <p>Mohamed Aouani</p>
+        </div>
+
+        <div class="member">
+            <a href="Adam.html">
+                <div class="circle">
+                <img src="Adam.png" alt="Adam Talbi">
+                </div>
+            </a>
+            <p>Adam Talbi</p>
+        </div>
+    </section>
+    
+    
+
+    <section id="about" class="mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center">
+        <div class="bg-gray-200 p-4 rounded-lg max-w-xs">
+            <img src="Plan de travail 1.jpg" alt="Aperçu CV" class="w-full object-cover rounded-lg">
+        </div>
+        <div class="text flex-1 mt-4 md:mt-0 md:ml-6 text-center md:text-left">
+            <h2>À propos de Nous</h2>
+            <p>Découvrez nos parcours et nos compétences à travers nos portfolios et nos CV.</p>
+            <button class="btn-secondary"><a href="#top">CV</a></button>
+            <button class="btn-secondary"><a href="#top">Portfolio</a></button>
+        </div>
+    </section>    
+    <div class="footer-content flex flex-wrap justify-center gap-6 text-center">
+        <div class="footer-left">
+    <section class="section-heading">
+        <h2>Section heading</h2>
+        <div class="footer-content">
+          <div>
+            <span class="font-bold text-xl">ByteGuards</span>
+          </div>
+          <div class="max-w-full overflow-hidden">
+            <h3>Security</h3>
+            <p>CyberSecurity</p>
+            <p>Pare-feu</p>
+          </div>
+          <div>
+            <h3>Web</h3>
+            <p>Cloud</p>
+            <p>Software</p>
+          </div>
+          <div>
+            <h3>Cloud</h3>
+            <p>Data</p>
+            <p>Big Data</p>
+          </div>
+        </div>    
+
+      </section>
+      </div>
+    </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            console.log("DOM chargé ✅");
+    
+            const menuToggle = document.getElementById("menu-button");
+            const mobileMenu = document.getElementById("mobile-menu");
+    
+            if (!menuToggle || !mobileMenu) {
+                console.error("❌ Erreur : Bouton ou menu introuvable !");
+                return;
+            }
+    
+            console.log("✅ Bouton et menu trouvés");
+    
+            menuToggle.addEventListener("click", function () {
+                console.log("📌 Bouton cliqué !");
+                mobileMenu.classList.toggle("show");
+                mobileMenu.classList.toggle("hidden");
+            });
+        });
+        
+    </script>               
 </body>
+<footer class="bg-gray-100 text-center py-10" class="w-full overflow-hidden px-4 sm:px-6 lg:px-8">
+    <h2 class="text-2xl font-bold mb-4">ByteGuards</h2>
+    
+    <!-- Icônes réseaux sociaux -->
+    <div class="flex justify-center space-x-6 mt-4 flex-wrap">
+            <a href="https://www.facebook.com" target="_blank" class="hover:text-gray-900"><img src="https://img.icons8.com/ios-filled/50/000000/facebook.png" alt="Facebook" class="h-8"></a>
+            <a href="https://www.linkedin.com" target="_blank" class="hover:text-gray-900"><img src="https://img.icons8.com/ios-filled/50/000000/linkedin.png" alt="LinkedIn" class="h-8"></a>
+            <a href="https://www.youtube.com" target="_blank" class="hover:text-gray-900"><img src="https://img.icons8.com/ios-filled/50/000000/youtube.png" alt="YouTube" class="h-8"></a>
+            <a href="https://www.instagram.com" target="_blank" class="hover:text-gray-900"><img src="https://img.icons8.com/ios-filled/50/000000/instagram.png" alt="Instagram" class="h-8"></a>
+    </div>
+
+    <!-- Catégories -->
+    <div class="flex justify-center space-x-20 text-left mb-6">
+        <div>
+            <h3 class="font-bold">Security</h3>
+            <p class="text-gray-600">CyberSecurity</p>
+            <p class="text-gray-600">Pare-feu</p>
+        </div>
+        <div>
+            <h3 class="font-bold">Web</h3>
+            <p class="text-gray-600">Cloud</p>
+            <p class="text-gray-600">Software</p>
+        </div>
+        <div>
+            <h3 class="font-bold">Cloud</h3>
+            <p class="text-gray-600">Data</p>
+            <p class="text-gray-600">Big Data</p>
+        </div>
+    </div>
+
+    <!-- Copyright -->
+    <p class="text-gray-500 text-sm">© 2025 ByteGuards - Tous droits réservés</p>
+</footer>
 </html>

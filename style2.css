@@ -1,0 +1,56 @@
+/* Liens dans la section team */
+.team a {
+    text-decoration: none;
+    color: black;
+}
+
+.member {
+    width: 100px;
+    height: 100px;
+    background: white;
+    border: 2px solid black;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.member:hover {
+    background: black;
+    color: white;
+}
+
+/* Page individuelle CV */
+.cv-section {
+    text-align: center;
+    padding: 50px;
+}
+
+.downloads {
+    margin-top: 20px;
+}
+
+.btn-download {
+    display: block;
+    margin: 10px auto;
+    padding: 10px 20px;
+    background: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.btn-download:hover {
+    background: #0056b3;
+}
+
+/* Bouton retour */
+.back {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
